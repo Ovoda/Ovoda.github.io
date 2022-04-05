@@ -1,8 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
 
 body {
     background-color: black;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 input:focus,
@@ -10,6 +19,17 @@ select:focus,
 textarea:focus,
 button:focus {
     outline: none;
+}
+
+body #inputs {
+    display: flex;
+    flex-direction: row;
+}
+
+body #inputs * {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
 }
 
 body .text_input {
@@ -26,12 +46,36 @@ body .text_input {
     align-items: center; */
 }
 
-body form {
+body #mint_price {
+    width: 150px;
+    border: 1px solid white;
+    background-color: white;
+    color: black;
+    border-radius: 100px;
+    padding: 7px 20px;
+    height: 30px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body #section_1,
+body #section_2,
+body #options {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+body #section_1,
+body #section_2 {
     height: 100vh;
+}
+
+h1 {
+    color: white;
 }
 
 .rarity_item {
@@ -43,4 +87,88 @@ body form {
 
 #rarity_description {
     color: white;
+    text-align: center;
+}
+
+#hidden {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0 !important;
+}
+
+body #next {
+    width: 100px;
+    border: 1px solid white;
+    background-color: white;
+    color: black;
+    border-radius: 100px;
+    padding: 7px 20px;
+    height: 40px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.15s;
+    margin-top: 100px;
+}
+
+body #next:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+/* SECTION 2 */
+
+
+
+#infos_container {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.checkbox_container {
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.checkbox_container h2 {
+    width: 100%;
+    transition: all 0.2s;
+}
+
+.checkbox_container h2:hover {
+    width: 100%;
+    transform: scale(1.1);
+}
+
+
+#help_box {
+    /* width: 30%; */
+    font-size: 30px;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+body #infos {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+body #infos * {
+    margin: 10px;
 }

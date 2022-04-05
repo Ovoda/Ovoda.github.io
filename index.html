@@ -11,12 +11,12 @@
 
 <body>
     <div id="section_1">
-
-        <form action="">
+        <h1>Donation options</h1>
+        <form id="options" action>
             <div id="inputs">
-
-                <input type="text" class="text_input" placeholder="Mint price">
+                <p id="mint_price">Mint price: 20€</p>
                 <input type="text" class="text_input" id="donation_amount" placeholder="Donation amount">
+                <input type="text" id="hidden">
             </div>
             <div id="rarity_items">
                 <img id="1" class="rarity_item selected" src="1.png">
@@ -24,8 +24,31 @@
                 <img id="3" class="rarity_item" src="3.png">
                 <img id="4" class="rarity_item" src="4.png">
             </div>
-            <h2 id="rarity_description"></h2>
+            <h2 id="rarity_description">Enter a donation amount</h2>
         </form>
+        <a href="#section_2" id="next">Next</a>
+        <script src="index.js" defer></script>
+    </div>
+    <div id="section_2">
+        <h1>Informations</h1>
+        <div id="infos_container">
+            <form id="infos" action>
+                <div class="checkbox_container">
+                    <h2>Donate the NFT</h2>
+                    <input type="checkbox" class="text_input" id="donation_amount" placeholder="Email">
+                </div>
+                <div class="checkbox_container">
+                    <h2>Keep the NFT</h2>
+                    <input type="checkbox" class="text_input" id="donation_amount" placeholder="Email">
+                </div>
+                <div class="checkbox_container">
+                    <h2>Store the NFT</h2>
+                    <input type="checkbox" class="text_input" id="donation_amount" placeholder="Email">
+                </div>
+            </form>
+            <div id="help_box">help</div>
+        </div>
+        <button id="next">Donate</button>
         <script src="index.js" defer></script>
     </div>
 </body>
