@@ -12,6 +12,37 @@ html {
 body {
     background-color: black;
     font-family: 'Inter', sans-serif;
+    color: white;
+}
+
+#header_container {
+    position: absolute;
+    height: 400vh;
+}
+
+#header {
+    width: 100px;
+    height: 100vh;
+    /* background-color: black; */
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#header .steps {
+    width: 50px;
+    height: 50px;
+    /* background-color: black; */
+    border: 2px solid white;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
 }
 
 input:focus,
@@ -60,18 +91,49 @@ body #mint_price {
     align-items: center;
 }
 
+body #section_0,
 body #section_1,
 body #section_2,
+body #section_3,
+body #section_4,
 body #options {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
+body #section_0,
 body #section_1,
-body #section_2 {
+body #section_2,
+body #section_3,
+body #section_4 {
     height: 100vh;
+}
+
+body #bg-blur1 {
+    /* background-color: white; */
+    background: linear-gradient(180deg, #2603FB 0%, #DC06FF 100%);
+    filter: blur(500px);
+    width: 40vw;
+    height: 40vh;
+    z-index: -1;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+body #bg-blur2 {
+    /* background-color: white; */
+    background: linear-gradient(180deg, #2603FB 0%, #DC06FF 100%);
+    filter: blur(500px);
+    width: 40vw;
+    height: 40vh;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 20px;
 }
 
 h1 {
@@ -98,7 +160,7 @@ h1 {
     margin: 0 !important;
 }
 
-body #next {
+body .next {
     width: 100px;
     border: 1px solid white;
     background-color: white;
@@ -114,7 +176,7 @@ body #next {
     margin-top: 100px;
 }
 
-body #next:hover {
+body .next:hover {
     background-color: black;
     color: white;
     cursor: pointer;
@@ -129,17 +191,25 @@ body #next:hover {
 #infos_container {
     color: white;
     display: flex;
-    flex-direction: column;
-    width: 80%;
+    /* flex-direction: column; */
+    width: 70%;
 }
 
 .checkbox_container {
     color: white;
-    width: 100%;
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 20px;
+    transition: all 0.05s;
+}
+
+.checkbox_container:hover,
+.checkbox_container_selected {
+    background: linear-gradient(0.15turn, #06DBAC, #BD00FF);
+    border: 0;
+    cursor: pointer;
 }
 
 .checkbox_container h2 {
@@ -147,16 +217,8 @@ body #next:hover {
     transition: all 0.2s;
 }
 
-.checkbox_container h2:hover {
-    width: 100%;
-    transform: scale(1.1);
-}
-
-
 #help_box {
-    /* width: 30%; */
-    font-size: 30px;
-    border: 1px solid white;
+    font-size: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -171,4 +233,35 @@ body #infos {
 
 body #infos * {
     margin: 10px;
+}
+
+#info_needed_box {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+#info_needed_box * {
+    margin: 10px;
+}
+
+
+.loader {
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #06DBAC;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    animation: spin 2s linear infinite;
+    margin: 40px;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }

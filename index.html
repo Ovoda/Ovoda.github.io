@@ -10,9 +10,25 @@
 </head>
 
 <body>
+    <div id="section_0">
+        <div id="bg-blur2"></div>
+        <h1>Metafunds user flow</h1>
+        <p><br>This is a WIP</p>
+        <a href="#section_1" class="next">Next</a>
+        <script src="index.js" defer></script>
+    </div>
+    <div id="header_container">
+        <div id="header">
+            <div id="step_1" class="steps step_done">1</div>
+            <div id="step_2" class="steps">2</div>
+            <div id="step_3" class="steps">3</div>
+            <div id="step_4" class="steps">4</div>
+        </div>
+    </div>
     <div id="section_1">
+        <div id="bg-blur1"></div>
         <h1>Donation options</h1>
-        <p style="color:white;margin: 10px;">This is a WIP : enter the amount, press enter and then click next</p>
+        <p style="color:white;margin: 10px;">(Enter the amount, press enter and then click next)</p>
         <form id="options" action>
             <div id="inputs">
                 <p id="mint_price">Mint price: 20€</p>
@@ -25,31 +41,51 @@
                 <img id="3" class="rarity_item" src="3.png">
                 <img id="4" class="rarity_item" src="4.png">
             </div>
-            <h2 id="rarity_description">Enter a donation amount</h2>
+            <h2 id="rarity_description">Enter a donation amount<br /> the more you give, the better the NFT (just sayin)
+            </h2>
         </form>
-        <a href="#section_2" id="next">Next</a>
+        <a href="#section_2" class="next">Next</a>
         <script src="index.js" defer></script>
     </div>
     <div id="section_2">
         <h1>Informations</h1>
         <div id="infos_container">
             <form id="infos" action>
-                <div class="checkbox_container">
+                <div class="checkbox_container checkbox_container_selected">
                     <h2>Donate the NFT</h2>
-                    <input type="checkbox" class="text_input" id="donation_amount" placeholder="Email">
                 </div>
                 <div class="checkbox_container">
                     <h2>Keep the NFT</h2>
-                    <input type="checkbox" class="text_input" id="donation_amount" placeholder="Email">
                 </div>
                 <div class="checkbox_container">
                     <h2>Store the NFT</h2>
-                    <input type="checkbox" class="text_input" id="donation_amount" placeholder="Email">
                 </div>
             </form>
-            <div id="help_box">What do you want to do with your NFT</div>
+            <div id="info_needed_box">
+                <input type="text" class="text_input" placeholder="Email">
+                <input type="text" class="text_input" placeholder="Keywords">
+            </div>
         </div>
-        <button id="next">Donate</button>
+        <div id="help_box">You want to donate the NFT to the NGO.</div>
+        <a href="#section_3" class="next">Next</a>
+        <script src="index.js" defer></script>
+    </div>
+    <div id="section_3">
+        <div id="bg-blur2"></div>
+        <h1>Payment</h1>
+        <div id="infos_container">
+            <form id="infos" action>
+
+            </form>
+        </div>
+        <a href="#section_4" class="next">Next</a>
+        <script src="index.js" defer></script>
+    </div>
+    <div id="section_4">
+        <div id="bg-blur1"></div>
+        <h1>Nice ! Your NFT is being generated</h1>
+        <div class="loader"></div>
+        <a href="#section_4" class="next">Next</a>
         <script src="index.js" defer></script>
     </div>
 </body>
