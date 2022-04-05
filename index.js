@@ -78,25 +78,25 @@ checkboxes[2].addEventListener("click", function (event) {
 
 nexts = document.getElementsByClassName("next");
 
-nexts[1].addEventListener("click", function (event) {
+nexts[0].addEventListener("click", function (event) {
     step = document.getElementById("step_1");
     step.style.background = "linear-gradient(0.15turn, #06DBAC, #BD00FF)";
     step.style.border = "2px solid black";
 });
 
-nexts[2].addEventListener("click", function (event) {
+nexts[1].addEventListener("click", function (event) {
     step = document.getElementById("step_2");
     step.style.background = "linear-gradient(0.15turn, #06DBAC, #BD00FF)";
     step.style.border = "2px solid black";
 });
 
-nexts[3].addEventListener("click", function (event) {
+nexts[2].addEventListener("click", function (event) {
     step = document.getElementById("step_3");
     step.style.background = "linear-gradient(0.15turn, #06DBAC, #BD00FF)";
     step.style.border = "2px solid black";
 });
 
-nexts[4].addEventListener("click", function (event) {
+nexts[3].addEventListener("click", function (event) {
     step = document.getElementById("step_4");
     step.style.background = "linear-gradient(0.15turn, #06DBAC, #BD00FF)";
     step.style.border = "2px solid black";
