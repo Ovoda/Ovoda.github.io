@@ -5,7 +5,7 @@ input = document.getElementById("donation_amount");
 
 input.addEventListener('change', updateValue);
 function updateValue(e) {
-    if (e.target.value < 50) {
+    if (e.target.value <= 50) {
         document.getElementById("1").style.opacity = "100%";
         document.getElementById("2").style.opacity = "30%";
         document.getElementById("3").style.opacity = "30%";
@@ -36,7 +36,7 @@ checkboxes = document.getElementsByClassName("checkbox_container");
 help_box = document.getElementById("help_box");
 
 checkboxes[0].addEventListener("mouseenter", function (event) {
-    help_box.innerText = "You want to donate the NFT to the NGO.\n This is very genereous of you.";
+    help_box.innerText = "You want to donate the NFT to the NGO.";
 }, false);
 checkboxes[1].addEventListener("mouseenter", function (event) {
     help_box.innerText = "You want to mint the NFT on your own wallet";
