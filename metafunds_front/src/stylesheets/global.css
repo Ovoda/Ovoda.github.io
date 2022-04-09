@@ -26,7 +26,6 @@ h6 {
 
 p,
 strong {
-    color: white;
     margin: 10px;
     font-family: var(--main-text-font);
 }

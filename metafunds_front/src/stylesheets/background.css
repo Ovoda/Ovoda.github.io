@@ -1,65 +1,139 @@
-#background {
-    height: 100vh;
-    width: 100vw;
-    background-color: black;
-    position: absolute;
-    z-index: -100;
+@media only screen and (min-width: 769px) {
+
+    #background {
+        height: 100vh;
+        width: 100vw;
+        background-color: black;
+        position: absolute;
+        z-index: -100;
+    }
+
+    #big-blur {
+        position: absolute;
+        width: 800px;
+        height: 800px;
+        left: -100px;
+        top: -250px;
+        display: grid;
+        grid-template-columns: repeat(4, 200px);
+        grid-template-rows: repeat(4, 200px);
+    }
+
+    .blur {
+        width: 400px;
+        height: 600px;
+        z-index: -100;
+        border-radius: 1000px;
+    }
+
+    #blur-1 {
+        background: linear-gradient(180deg, #FB03F5 0%, #AA9CFF 100%);
+        filter: blur(70px);
+        transform: rotate(76.66deg);
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    #blur-2 {
+        background: linear-gradient(180deg, #2603FB 0%, #DC06FF 100%);
+        filter: blur(70px);
+        transform: rotate(-22.54deg);
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    #blur-3 {
+        background: linear-gradient(180deg, #03FB75 0%, #06FFF0 100%);
+        filter: blur(70px);
+        transform: rotate(76.66deg);
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    #blur-4 {
+        background: linear-gradient(261.63deg, #7000FF 4.87%, #06FFF0 87.02%);
+        filter: blur(150px);
+        transform: rotate(54.35deg);
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
 }
 
-#big-blur {
-    position: absolute;
-    width: 800px;
-    height: 800px;
-    left: -100px;
-    top: -250px;
-    display: grid;
-    grid-template-columns: repeat(4, 200px);
-    grid-template-rows: repeat(4, 200px);
-}
+/*** Mobile ***/
 
-.blur {
-    width: 400px;
-    height: 600px;
-    z-index: -100;
-    border-radius: 1000px;
-}
+@media only screen and (max-width: 768px) {
+    #background {
+        height: 100vh;
+        width: 100vw;
+        background-color: black;
+        position: absolute;
+        z-index: -100;
+    }
 
-#blur-1 {
-    background: linear-gradient(180deg, #FB03F5 0%, #AA9CFF 100%);
-    filter: blur(70px);
-    transform: rotate(76.66deg);
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2;
-}
+    #big-blur {
+        position: absolute;
+        width: 400px;
+        height: 400px;
+        left: -100px;
+        top: -250px;
+        display: grid;
+        grid-template-columns: repeat(4, 200px);
+        grid-template-rows: repeat(4, 200px);
+    }
 
-#blur-2 {
-    background: linear-gradient(180deg, #2603FB 0%, #DC06FF 100%);
-    filter: blur(70px);
-    transform: rotate(-22.54deg);
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
-}
+    .blur {
+        width: 200px;
+        height: 300px;
+        z-index: -100;
+        border-radius: 1000px;
+    }
 
-#blur-3 {
-    background: linear-gradient(180deg, #03FB75 0%, #06FFF0 100%);
-    filter: blur(70px);
-    transform: rotate(76.66deg);
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 3;
-}
+    #blur-1 {
+        background: linear-gradient(180deg, #FB03F5 0%, #AA9CFF 100%);
+        filter: blur(70px);
+        transform: rotate(76.66deg);
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
 
-#blur-4 {
-    background: linear-gradient(261.63deg, #7000FF 4.87%, #06FFF0 87.02%);
-    filter: blur(150px);
-    transform: rotate(54.35deg);
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
+    #blur-2 {
+        background: linear-gradient(180deg, #2603FB 0%, #DC06FF 100%);
+        filter: blur(70px);
+        transform: rotate(-22.54deg);
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    #blur-3 {
+        background: linear-gradient(180deg, #03FB75 0%, #06FFF0 100%);
+        filter: blur(70px);
+        transform: rotate(76.66deg);
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    #blur-4 {
+        background: linear-gradient(261.63deg, #7000FF 4.87%, #06FFF0 87.02%);
+        filter: blur(150px);
+        transform: rotate(54.35deg);
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
 }

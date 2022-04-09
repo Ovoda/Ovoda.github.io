@@ -3,6 +3,8 @@ header {
     margin: 0 !important;
 }
 
+/**** Desktop && Tablet ****/
+
 .navbar {
     display: flex;
     flex-direction: row;
@@ -10,6 +12,7 @@ header {
     align-items: center;
     border-bottom: 1px solid white;
     height: 55px;
+    color: var(--white);
 }
 
 #header_links {
@@ -19,13 +22,127 @@ header {
     align-items: center;
     margin: 0;
     list-style: none;
+    color: var(--white);
 }
 
-.header_link {
+#header_links a {
     text-decoration: none;
     padding: 10px;
+    color: var(--white);
+    text-transform: uppercase;
 }
 
-.header_link:visited {
+#header_links a:visited {
+    color: var(--white);
+}
+
+
+/**** Mobile ****/
+.mobile_navbar {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile_header {
+    padding: 20px;
+    position: absolute;
+    padding-top: 100px;
+    height: 100%;
+    transform: translateX(-100%);
+    width: 100%;
+    backdrop-filter: blur(2000px);
+}
+
+.slide-in {
+    animation: slide-in 0.5s forwards;
+    -webkit-animation: slide-in 0.5s forwards;
+}
+
+.slide-out {
+    animation: slide-out 0.5s forwards;
+    -webkit-animation: slide-out 0.5s forwards;
+}
+
+@keyframes slide-in {
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@-webkit-keyframes slide-in {
+    100% {
+        -webkit-transform: translateX(0%);
+    }
+}
+
+@keyframes slide-out {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@-webkit-keyframes slide-out {
+    0% {
+        -webkit-transform: translateX(0%);
+    }
+
+    100% {
+        -webkit-transform: translateX(-100%);
+    }
+}
+
+
+#mobile_header_links {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin: 0;
+    padding-inline-start: 0px;
+    list-style: none;
+    color: white;
+}
+
+#mobile_header_links a {
+    font-size: 34px;
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+#mobile_header_links a:visited {
+    color: var(--white);
+}
+
+.icons {
+    font-size: 55px;
+    color: white;
+    margin: 10px;
+}
+
+#menu_btn {
+    z-index: 1000;
+    width: 100px;
+    height: 100px;
+}
+
+.social_media {
+    color: white;
+}
+
+.hamburger {
+    font-size: 34px;
+    padding: 34px;
     color: var(--white);
 }
