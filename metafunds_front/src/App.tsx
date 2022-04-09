@@ -20,8 +20,8 @@ function App() {
       <h4>Title H4</h4>
       <h5>Title H5</h5>
       <h6>Title H6</h6>
-      <p>This is some p tag text</p>
-      <strong>This is some p tag strong text</strong>
+      <p style={{ color: "white" }}>This is some p tag text</p>
+      <strong style={{ color: "white" }}>This is some p tag strong text</strong>
     </div >
   );
 }
