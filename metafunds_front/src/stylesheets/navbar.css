@@ -1,0 +1,31 @@
+header {
+    /* background-color: white; */
+    margin: 0 !important;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid white;
+    height: 55px;
+}
+
+#header_links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    list-style: none;
+}
+
+.header_link {
+    text-decoration: none;
+    padding: 10px;
+}
+
+.header_link:visited {
+    color: var(--white);
+}

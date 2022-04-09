@@ -1,0 +1,28 @@
+.text_input {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-decoration: none;
+    outline: none;
+    font-size: 14px;
+    font-family: var(--main-text-font);
+    line-height: 1;
+    border-radius: 500px;
+    transition-property: background-color, border-color, color;
+    transition-duration: 0.3s;
+    letter-spacing: 2px;
+    width: 356px;
+    text-transform: uppercase;
+    white-space: normal;
+    font-weight: 700;
+    padding: 0 21px;
+    height: 55px;
+    background-color: var(--black);
+    border: 2px solid var(--white);
+    color: var(--white);
+    margin: 10px;
+}
+
+.text_input:focus {
+    outline: none;
+}
