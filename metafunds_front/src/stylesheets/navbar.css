@@ -11,7 +11,7 @@ header {
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid white;
-    height: 55px;
+    height: 7vh;
     color: var(--white);
 }
 
@@ -36,8 +36,21 @@ header {
     color: var(--white);
 }
 
+.social_media_icons {
+    padding: 10px;
+    font-size: 21px;
+}
+
+.social_media_icons * {
+    margin: 10px;
+}
+
+.social_media_icons *:hover {
+    cursor: pointer;
+}
 
 /**** Mobile ****/
+
 .mobile_navbar {
     position: absolute;
     width: 100vw;
@@ -53,7 +66,7 @@ header {
     height: 100%;
     transform: translateX(-100%);
     width: 100%;
-    backdrop-filter: blur(2000px);
+    backdrop-filter: blur(50px);
 }
 
 .slide-in {
