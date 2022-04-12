@@ -1,6 +1,6 @@
 import React from 'react';
-import '../stylesheets/global.css';
-import '../stylesheets/background.css';
+import '../stylesheets/global.scss';
+import '../stylesheets/background.scss';
 
 function Background() {
     return (

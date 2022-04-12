@@ -2,8 +2,8 @@ import React from 'react';
 import { useMediaQuery } from 'react-responsive'
 import SecondaryNavbar from './secondaryNavbar';
 import PrimaryNavbar from './primaryNavbar';
-import '../../stylesheets/global.css';
-import '../../stylesheets/navbar.css';
+import '../../stylesheets/global.scss';
+import '../../stylesheets/navbar.scss';
 
 function Navbar() {
     const isDesktop = useMediaQuery({

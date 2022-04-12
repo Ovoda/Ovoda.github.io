@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { pages, listPages } from './content';
-import '../../stylesheets/global.css';
-import '../../stylesheets/navbar.css';
+import '../../stylesheets/global.scss';
+import '../../stylesheets/navbar.scss';
 import { FaGripLines } from "react-icons/fa";
 
 function SecondaryNavbar() {

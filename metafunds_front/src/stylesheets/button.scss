@@ -1,3 +1,5 @@
+@import '../components/grid_section/grid_section';
+
 .button {
     display: flex;
     justify-content: center;
@@ -5,23 +7,24 @@
     text-decoration: none;
     outline: none;
     cursor: pointer;
-    font-size: 14px;
     font-family: var(--main-text-font);
     line-height: 1;
     border-radius: 500px;
     transition-property: background-color, border-color, color;
     transition-duration: 0.3s;
     letter-spacing: 2px;
-    width: 233px;
     text-transform: uppercase;
     white-space: normal;
     font-weight: 700;
     text-align: center;
-    height: 55px;
     background-color: var(--black);
     border: 2px solid var(--white);
     color: var(--white);
     margin: 10px;
+
+    font-size: 13px;
+    width: 233px;
+    height: 55px;
 }
 
 .button:visited {

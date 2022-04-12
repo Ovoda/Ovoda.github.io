@@ -1,7 +1,8 @@
 import React from 'react';
-import './stylesheets/global.css';
-import './stylesheets/text_input.css';
-import './stylesheets/button.css';
+import './stylesheets/global.scss';
+import './stylesheets/text_input.scss';
+import './stylesheets/button.scss';
+import GridSection from './components/grid_section/grid_section';
 import Navbar from './components/navbar/navbar';
 import MobileNavbar from './components/navbar/secondaryNavbar';
 import Background from './components/background';
